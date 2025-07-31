@@ -19,7 +19,7 @@
   "dependencies": {
     "@salla.sa/twilight": "^2.14.168",
     "@salla.sa/twilight-tailwind-theme": "^2.14.177",
-    "animejs": "^3.2.1",
+    "animejs": "^4.1.2",
     "fslightbox": "^3.7.3",
     "lite-youtube-embed": "^0.2.0",
     "mmenu-light": "^3.0.9",
