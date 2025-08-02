@@ -497,7 +497,7 @@ function App() {
                 <SelectValue placeholder="جميع الفئات" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">جميع الفئات</SelectItem>
+                <SelectItem value="all">جميع الفئات</SelectItem>
                 {categories.map(category => (
                   <SelectItem key={category.id} value={category.id}>
                     {category.icon} {category.name}
