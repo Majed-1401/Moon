@@ -78,9 +78,9 @@ function App() {
   const fetchListings = async () => {
     try {
       const params = new URLSearchParams();
-      if (selectedCategory) params.append('category_id', selectedCategory);
-      if (selectedRegion) params.append('region_id', selectedRegion);
-      if (selectedCondition) params.append('condition', selectedCondition);
+      if (selectedCategory && selectedCategory !== 'all') params.append('category_id', selectedCategory);
+      if (selectedRegion && selectedRegion !== 'all') params.append('region_id', selectedRegion);
+      if (selectedCondition && selectedCondition !== 'all') params.append('condition', selectedCondition);
       if (searchQuery) params.append('search', searchQuery);
 
       const response = await fetch(`${BACKEND_URL}/api/listings?${params}`);
